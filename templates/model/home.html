@@ -1,0 +1,91 @@
+{% extends 'model/index.html' %}
+{% load static %}
+
+{%block title%}
+
+Home
+
+{% endblock %}
+
+
+{% block body %}
+
+<form class='tm-bg-white-transparent' action='{% url 'model:result' %}' method=''>
+<div class='justify-content-center align-items-center'>
+	<div class="form-row">
+		<div class="col form-group">
+		<label for="Loan_ID">Loan ID:</label><br>
+		<input class="form-control rounded-0 border-top-0 border-right-0 border-left-0" type="text" id="Loan_ID" name="Loan_ID"><br>
+		</div>
+		<div class="col form-group">
+		<label for="Gender">Gender:</label><br>
+		<input class="form-control rounded-0 border-top-0 border-right-0 border-left-0" type="text" id="Gender" name="Gender"><br>
+		</div>
+	</div>
+	
+	<div class="form-row">
+	
+		<div class="col form-group">
+		<label for="Married">Married:</label><br>
+		<input class="form-control rounded-0 border-top-0 border-right-0 border-left-0" type="text" id="Married" name="Married"><br>
+		</div>
+		<div class="col form-group">
+		<label for="Dependents">Dependents:</label><br>
+		<input class="form-control rounded-0 border-top-0 border-right-0 border-left-0" type="text" id="Dependents" name="Dependents"><br>
+		</div>
+	</div>
+	
+	<div class="form-row">
+		
+		<div class="col form-group">
+		<label for="Education">Education:</label><br>
+		<input class="form-control rounded-0 border-top-0 border-right-0 border-left-0" type="text" id="Education" name="Education"><br>
+		</div>
+		<div class="col form-group">
+		<label for="Self_Employed">Self Employed:</label><br>
+		<input class="form-control rounded-0 border-top-0 border-right-0 border-left-0" type="text" id="Self_Employed" name="Self_Employed"><br>
+		</div>
+	</div>
+	
+	<div class="form-row">
+		
+		<div class="col form-group">
+		<label for="ApplicantIncome">Applicant Income:</label><br>
+		<input class="form-control rounded-0 border-top-0 border-right-0 border-left-0" type="text" id="ApplicantIncome" name="ApplicantIncome"><br>
+		</div>
+		<div class="col form-group">
+		<label for="CoapplicantIncome">Coapplicant Income:</label><br>
+		<input class="form-control rounded-0 border-top-0 border-right-0 border-left-0" type="text" id="CoapplicantIncome" name="CoapplicantIncome"><br>
+		</div>
+	</div>
+	
+	<div class="form-row">
+	
+		<div class="col form-group">
+		<label for="LoanAmount">Loan Amount:</label><br>
+		<input class="form-control rounded-0 border-top-0 border-right-0 border-left-0" type="text" id="LoanAmount" name="LoanAmount"><br>
+		</div>
+		<div class="col form-group">
+		<label for="Loan_Amount_Term">Loan Amount Term:</label><br>
+		<input class="form-control rounded-0 border-top-0 border-right-0 border-left-0" type="text" id="Loan_Amount_Term" name="Loan_Amount_Term"><br>
+		</div>
+	</div>
+	
+	<div class="form-row">
+	
+		<div class="col form-group">
+		<label for="Credit_History">Credit History:</label><br>
+		<input class="form-control rounded-0 border-top-0 border-right-0 border-left-0" type="text" id="Credit_History" name="Credit_History"><br>
+		</div>
+		<div class="col form-group">
+		<label for="Property_Area">Property Area:</label><br>
+		<input class="form-control rounded-0 border-top-0 border-right-0 border-left-0" type="text" id="Property_Area" name="Property_Area"><br><br>
+		</div>
+	</div>
+	
+	<input  type="submit" class="btn btn-primary" value="Submit"><br><br><br>
+	
+</div>
+</form>
+
+{% endblock %}
