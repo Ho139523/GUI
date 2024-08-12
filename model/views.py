@@ -1,7 +1,5 @@
 from django.shortcuts import render
 import joblib
-from sklearn.preprocessing import LabelEncoder
-from sklearn.metrics import accuracy_score
 import pandas as pd
 import numpy as np
 
@@ -26,7 +24,7 @@ def result(request):
     loan_test.Self_Employed = loan_test.Self_Employed.replace({"Yes": 1, "No" : 0})
     
     
-    le = LabelEncoder()
+    le = joblib.load('utils/logistic_label_encoder.pkl')
     for col in feature_col:
         loan_test[col] = le.fit_transform(loan_test[col])
         

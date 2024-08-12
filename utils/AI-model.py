@@ -102,3 +102,6 @@ import pickle as pkl
 # save the model to disk
 filename = 'logistic_model.pkl'
 pkl.dump(logistic_model, open(filename, 'wb')) # wb means write as binary
+
+filename_label='logistic_label_encoder.pkl'
+pkl.dump(le, open(filename_label, 'wb'))
