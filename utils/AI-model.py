@@ -21,7 +21,7 @@ loan_test['LoanAmount'].fillna(loan_test['LoanAmount'].mean(), inplace=True) # M
 
 
 loan_train.Loan_Status = loan_train.Loan_Status.replace({"Y": 1, "N" : 0})
-loan_test.Loan_Status = loan_test.Loan_Status.replace({"Y": 1, "N" : 0})
+# loan_test.Loan_Status = loan_test.Loan_Status.replace({"Y": 1, "N" : 0})
 
 loan_train.Gender = loan_train.Gender.replace({"Male": 1, "Female" : 0})
 loan_test.Gender = loan_test.Gender.replace({"Male": 1, "Female" : 0})
